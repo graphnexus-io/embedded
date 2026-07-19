@@ -1,0 +1,124 @@
+# OS and editor noise
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.local
+*.secret
+secrets/
+credentials/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+.venv/
+venv/
+env/
+ENV/
+pip-wheel-metadata/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+dist/
+build/
+
+# Python GUI / packaging artifacts
+*.spec
+*.manifest
+*.app/
+*.dmg
+*.exe
+*.msi
+
+# C, C++, and assembly build outputs
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.srec
+*.out
+*.d
+*.su
+*.gcno
+*.gcda
+*.gcov
+
+# Common build directories
+Debug/
+Release/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+compile_commands.json
+*.ninja
+.ninja_deps
+.ninja_log
+
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+platformio.ini.local
+
+# Arduino
+*.ino.hex
+*.ino.bin
+*.ino.elf
+*.ino.map
+*.with_bootloader.*
+*.eep
+*.lst
+*.tmp
+arduino_build_*/
+arduino_cache_*/
+.arduinoIDE/
+
+# STM32 / ARM toolchains
+*.axf
+*.launch
+*.dep
+*.crf
+*.htm
+*.uvguix.*
+*.uvoptx
+*.uvprojx
+JLinkLog.txt
+JLinkSettings.ini
+EWARM/
+MDK-ARM/
+STM32CubeIDE/
+.settings/
+.cproject
+.project
+
+# Logs and captures
+*.log
+logs/
+captures/
+
+# Keep repository placeholders when needed
+!.gitkeep
