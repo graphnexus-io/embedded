@@ -8,5 +8,5 @@ void setup() {
 void loop() {
   int waterLevelSignal = analogRead(SIGNAL_PIN);
   Serial.println(waterLevelSignal);
-  delay(500);
+  delay(50);
 }
