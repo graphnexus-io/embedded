@@ -19,6 +19,11 @@ Every project folder should include a `README.md` with the hardware/software req
 - `stm32/` - STM32 firmware projects and experiments.
 - `tiva/` - TI Tiva C / TM4C projects and experiments.
 
+## Current Projects
+
+- `arduino/7_stepper_motor_encoder/` - Arduino Mega stepper motor controller with encoder feedback, serial telemetry, and a Python Tkinter GUI.
+- `arduino/8_water_level_sensor/` - Arduino analog water level sensor monitor with a Python Tkinter GUI and calibration table.
+
 ## Public Repo Notes
 
 The `.gitignore` is set up to keep source code, documentation, and small configuration examples while excluding local build products, firmware binaries, Python virtual environments, editor files, logs, generated packages, and secrets.

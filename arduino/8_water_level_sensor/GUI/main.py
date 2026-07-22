@@ -193,7 +193,7 @@ class WaterLevelMonitor:
 
         self.calibration_label = ttk.Label(
             display_frame,
-            text="Calibration: 0→0%, 480→25%, 500→50%, 570→100%",
+            text="Calibration: 0->0%, 480->25%, 555->50%, 565->80%, 580->100%",
             font=("Arial", 9)
         )
         self.calibration_label.pack(pady=(4, 2))
