@@ -5,7 +5,7 @@ import serial
 import serial.tools.list_ports
 
 
-BAUD_RATE = 9600 
+BAUD_RATE = 9600
 
 # Calibration points:
 # sensor value -> water level percentage

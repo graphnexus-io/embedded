@@ -120,5 +120,5 @@ STM32CubeIDE/
 logs/
 captures/
 
-# Keep repository placeholders when needed
+# Empty directories
 !.gitkeep

@@ -35,7 +35,7 @@ Check the driver wiring and voltage levels before powering the motor. The Arduin
 Firmware location:
 
 ```text
-sketch/stepper.ino
+sketch/sketch.ino
 ```
 
 Arduino library dependency:
@@ -48,7 +48,7 @@ Install with Arduino IDE:
 2. Go to `Tools > Manage Libraries`.
 3. Search for `AccelStepper`.
 4. Install the library by Mike McCauley.
-5. Open `sketch/stepper.ino`.
+5. Open `sketch/sketch.ino`.
 6. Select `Arduino Mega or Mega 2560`.
 7. Select the correct serial port.
 8. Upload the sketch.

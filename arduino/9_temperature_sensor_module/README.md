@@ -39,7 +39,7 @@ The module potentiometer adjusts only the `DO` switching threshold. It does not 
 Firmware location:
 
 ```text
-sketch/sketch/sketch.ino
+sketch/sketch.ino
 ```
 
 The sketch samples the module every `100 ms`. It prints the current analog and digital readings, then mirrors a stable digital state to pin `3`. A requested state must remain unchanged for `1000 ms` before the output changes, which helps prevent rapid switching near the comparator threshold.
@@ -47,7 +47,7 @@ The sketch samples the module every `100 ms`. It prints the current analog and d
 Upload with Arduino IDE:
 
 1. Open Arduino IDE.
-2. Open `sketch/sketch/sketch.ino`.
+2. Open `sketch/sketch.ino`.
 3. Select the correct board from `Tools > Board`.
 4. Select the correct serial port from `Tools > Port`.
 5. Upload the sketch.

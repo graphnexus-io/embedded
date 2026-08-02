@@ -1,6 +1,6 @@
 # Arduino Near-Infrared Detector Module
 
-Arduino demo for monitoring a near-infrared detector module with analog and digital outputs. The Arduino streams the raw infrared intensity and comparator state over serial, while a large Python Tkinter GUI presents the live intensity and a highly visible digital indicator suitable for a YouTube demonstration.
+Arduino project for monitoring a near-infrared detector module with analog and digital outputs. The Arduino streams the raw infrared intensity and comparator state over serial, while a Python Tkinter GUI presents the live intensity and a high-contrast digital indicator.
 
 ## What It Demonstrates
 
@@ -28,7 +28,7 @@ Default wiring:
 
 Check the detector module's supply-voltage and output-voltage specifications before wiring it. The input signal must remain within the safe range of the Arduino board. Many modules work at `5 V`, but this should not be assumed for every detector.
 
-The onboard potentiometer, when fitted, adjusts the `DO` comparator threshold. It does not calibrate the analog output. Ambient sunlight and incandescent lighting contain infrared energy and can influence the reading, so test the module under lighting similar to the intended demonstration.
+The onboard potentiometer, when fitted, adjusts the `DO` comparator threshold. It does not calibrate the analog output. Ambient sunlight and incandescent lighting contain infrared energy and can influence the reading, so test the module under lighting similar to its intended use.
 
 ## Firmware
 
@@ -78,7 +78,10 @@ GUI location:
 GUI/main.py
 ```
 
-The presentation-focused dark GUI uses large values and high-contrast status colors so the readings remain clear in a screen recording. As requested, the circle and the `Infrared source detected` display are red for `HIGH` and green for `LOW`. This color mapping represents the electrical state; confirm how your particular module maps that state to physical infrared detection.
+The dark GUI uses large values and high-contrast status colors. The circle and
+the `Infrared source detected` display are red for `HIGH` and green for `LOW`.
+This color mapping represents the electrical state; confirm how your particular
+module maps that state to physical infrared detection.
 
 Python dependency:
 
@@ -151,13 +154,11 @@ In the GUI:
 4. Aim an infrared source at the detector.
 5. Watch the intensity gauge and digital signal indicator update live.
 
-For a clean video capture, use a `16:9` desktop resolution, maximize the GUI, enlarge it to fill the recording region, and avoid showing Arduino Serial Monitor at the same time.
-
 ## Understanding the Readings
 
 `INFRARED_INTENSITY` is shown as both a raw ADC count and a percentage of the full `0` to `1023` ADC range. The percentage is not a calibrated optical unit and should not be interpreted as radiant power or distance. Depending on the detector circuit, a stronger infrared source can make the raw value either rise or fall.
 
-The digital output switches when the analog signal crosses the threshold selected by the module's potentiometer. Some comparator modules use active-low logic, meaning `LOW` indicates detection; others use active-high logic. The GUI deliberately follows the requested electrical-state colors:
+The digital output switches when the analog signal crosses the threshold selected by the module's potentiometer. Some comparator modules use active-low logic, meaning `LOW` indicates detection; others use active-high logic. The GUI uses these electrical-state colors:
 
 | Digital Signal | Indicator Color |
 | --- | --- |
