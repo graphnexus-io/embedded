@@ -26,6 +26,9 @@ dependencies, and build procedure.
 
 - [SN74HC74 flip-flop exploration](tiva/1_explore_SN74HC74_flip_flop/) — a
   bare-metal TM4C123GH6PM program that drives data and clock signals from GPIO.
+- [Four-bit binary LED counter](tiva/2_binary_led/) — a bare-metal
+  TM4C123GH6PM program that increments a PB0-PB3 LED display from the onboard
+  SW1 button.
 
 Project-specific READMEs contain the required toolchain and hardware details.
 Build products, editor state, virtual environments, and local credentials are
